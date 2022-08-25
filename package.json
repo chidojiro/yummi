@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "jest"
+    "test": "react-app-rewired test"
   },
   "husky": {
     "hooks": {
@@ -72,8 +72,15 @@
     "husky": "^4.3.7",
     "jest": "^27.4.4",
     "lint-staged": "^13.0.3",
+    "msw": "^0.45.0",
     "prettier": "^2.7.1",
     "react-app-rewired": "^2.2.1",
     "ts-jest": "^27.1.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@/(.*)": "<rootDir>/src/$1",
+      "^lodash-es$": "lodash"
+    }
   }
 }
