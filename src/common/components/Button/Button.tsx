@@ -1,5 +1,4 @@
 import './Button.css';
-
 import clsx from 'clsx';
 
 type Variant = 'outline' | 'solid';
@@ -21,7 +20,7 @@ export const Button = ({
   return (
     <button
       {...restProps}
-      className={clsx('button', `button-${variant}-${colorScheme}`, `button-rounded-${rounded}`)}
+      className={clsx('button', `button-${variant}-${colorScheme}`, `button-rounded-${rounded}`, className)}
     />
   );
 };

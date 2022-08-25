@@ -1,0 +1,28 @@
+.tabs__navigator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.tabs__navigator .tabs__navigator-item {
+  border-right: none;
+}
+
+.tabs__navigator-item:first-of-type {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.tabs__navigator-item:last-of-type {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 1px solid var(--yellow);
+}
+
+.tabs__content {
+  padding: 8px 0;
+}
+
+.tabs__navigator-item--active {
+  font-weight: 500;
+}

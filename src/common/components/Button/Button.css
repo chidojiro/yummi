@@ -2,7 +2,7 @@
   height: 36px;
   padding: 0 20px;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   transition: all ease-in-out .05s;
 }
@@ -18,10 +18,6 @@
 .button-outline-primary {
   background: transparent;
   border: 1px solid var(--yellow);
-}
-
-.button-outline-primary:hover {
-  background-color: var(--yellow);
 }
 
 .button-rounded-md {

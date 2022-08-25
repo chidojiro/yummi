@@ -1,0 +1,1 @@
+export { FoodBrowsingPage } from './FoodBrowsingPage';
