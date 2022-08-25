@@ -1,5 +1,4 @@
 import React from 'react';
-import { toast } from 'react-toastify';
 import useSwr, { SWRConfiguration } from 'swr';
 
 export type UseHandlerConfigurations<T = unknown> = {
@@ -35,8 +34,6 @@ export const useHandler = <T = void>(
       const shouldUseDefaultErrorHandler = onError?.(error, argsRef.current ?? []) ?? true;
 
       if (!shouldUseDefaultErrorHandler) return;
-
-      toast.error('Something went wrong!');
     },
     revalidateOnFocus: false,
     revalidateOnReconnect: false,

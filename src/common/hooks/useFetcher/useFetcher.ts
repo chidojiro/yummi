@@ -1,5 +1,4 @@
 import React from 'react';
-import { toast } from 'react-toastify';
 import useSwr, { SWRConfiguration } from 'swr';
 
 export type UseFetcherConfiguration<T = any> = SWRConfiguration<T> & {
@@ -20,8 +19,6 @@ export const useFetcher = <T = unknown>(
     const shouldUseDefaultErrorHandler = onError?.(error, key, config) ?? true;
 
     if (!shouldUseDefaultErrorHandler) return;
-
-    toast.error('Something went wrong!');
   };
 
   const swrReturn = useSwr<T>(
