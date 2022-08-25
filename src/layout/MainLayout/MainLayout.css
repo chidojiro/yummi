@@ -1,0 +1,10 @@
+.main-layout {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.main-layout-content {
+  max-width: 1280px;
+  padding: 40px 16px;
+  margin: 0 auto;
+}

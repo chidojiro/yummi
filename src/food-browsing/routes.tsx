@@ -7,7 +7,7 @@ const FoodBrowsingPage = React.lazy(() =>
   }))
 );
 
-export const FoodBrowsingRoutes: Record<string, RouteItem> = {
+export const FoodBrowsingRoutes: Record<'FoodBrowsing', RouteItem> = {
   FoodBrowsing: {
     path: '/',
     component: FoodBrowsingPage,
