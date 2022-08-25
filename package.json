@@ -15,7 +15,6 @@
     "js-cookie": "^3.0.1",
     "lodash-es": "^4.17.21",
     "react": "^17",
-    "react-app-rewired": "^2.2.1",
     "react-dom": "^17",
     "react-icons": "^4.4.0",
     "react-router-dom": "^5",
@@ -26,10 +25,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "jest",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -75,6 +73,7 @@
     "jest": "^27.4.4",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "react-app-rewired": "^2.2.1",
     "ts-jest": "^27.1.1"
   }
 }
