@@ -6,7 +6,7 @@ import './MainLayoutHeader.css';
 export const MainLayoutHeader = () => {
   return (
     <div className='main-layout-header'>
-      <Link to={FoodBrowsingRoutes.FoodBrowsing.path} className='main-layout-header--home'>
+      <Link to={FoodBrowsingRoutes.FoodBrowsing.path} className='main-layout-header__home'>
         <HomeIcon />
         <h3>Yummi</h3>
       </Link>

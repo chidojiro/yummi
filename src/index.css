@@ -16,8 +16,9 @@ code {
 
 :root {
   --yellow: #FFC700;
-  --gray: #F7F8FA;
-  --gray-dark: #6B6567;
+  --gray-1: #F7F8FA;
+  --gray-2: #e4e4e4;
+  --gray-3: #6B6567;
   --blue: #00B1FF;
   --red: #FF696F;
   --purple: #8F64FF;
@@ -42,4 +43,8 @@ h1,h2,h3,h4,h5,h6,p {
 
 a {
   text-decoration: none;
+}
+
+body {
+  background-color: var(--gray);
 }
