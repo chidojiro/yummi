@@ -1,0 +1,33 @@
+.button {
+  height: 36px;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out .05s;
+}
+
+.button-solid-primary {
+  background-color: var(--yellow);
+}
+
+.button-solid-primary:hover {
+  filter: brightness(95%);
+}
+
+.button-outline-primary {
+  background: transparent;
+  border: 1px solid var(--yellow);
+}
+
+.button-outline-primary:hover {
+  background-color: var(--yellow);
+}
+
+.button-rounded-md {
+  border-radius: 8px;
+}
+
+.button-rounded-none {
+  border-radius: 0;
+}
