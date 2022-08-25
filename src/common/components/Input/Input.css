@@ -1,5 +1,5 @@
 .input {
-  border-radius: 8px;
+  border-radius: var(--border-radius-md);
   outline: none;
   height: 36px;
   border: 1px solid var(--gray-2);

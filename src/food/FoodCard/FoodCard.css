@@ -1,0 +1,36 @@
+.food-card {
+  position: relative;
+  height: 300px;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  background-color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.food-card__image {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-information {
+  padding: 20px 16px;
+}
+
+.food-information__tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.food-information__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.food-information__new {
+  color: var(--green);
+  font-weight: 600;
+}

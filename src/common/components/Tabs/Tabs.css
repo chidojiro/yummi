@@ -9,13 +9,13 @@
 }
 
 .tabs__navigator-item:first-of-type {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: var(--border-radius-md);
+  border-bottom-left-radius: var(--border-radius-md);
 }
 
 .tabs__navigator-item:last-of-type {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: var(--border-radius-md);
+  border-bottom-right-radius: var(--border-radius-md);
   border-right: 1px solid var(--yellow);
 }
 

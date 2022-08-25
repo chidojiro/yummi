@@ -17,11 +17,19 @@ code {
 :root {
   --yellow: #FFC700;
   --gray-1: #F7F8FA;
-  --gray-2: #e4e4e4;
+  --gray-2: #EAECEE;
   --gray-3: #6B6567;
   --blue: #00B1FF;
   --red: #FF696F;
   --purple: #8F64FF;
+  --green: #73D0C2;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --shadow-md: 0px 3px 5px rgba(9, 30, 66, 0.05), -1px 6px 8px rgba(6, 25, 56, 0.03);
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
 }
 
 *,
@@ -37,8 +45,37 @@ html {
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-  margin: 0
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 a {

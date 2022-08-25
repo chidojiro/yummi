@@ -1,0 +1,27 @@
+
+.food-promotion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: var(--border-radius-lg);
+  color: white;
+  height: 32px;
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-promotion--gift {
+  background-color: var(--blue);
+}
+
+.food-promotion--1\+1 {
+  background-color: var(--purple);
+  font-size: var(--font-size-sm);
+}
+
+.food-promotion--discount {
+  background-color: var(--red);
+  font-size: var(--font-size-sm);
+}
