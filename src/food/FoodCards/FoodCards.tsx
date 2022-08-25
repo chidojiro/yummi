@@ -3,13 +3,14 @@ import { ClassName } from '@/common/types';
 import clsx from 'clsx';
 import React from 'react';
 import { FoodCard } from '../FoodCard/FoodCard';
-import { useFoods } from '../useFoods';
 
-export type FoodCardsProps = ClassName;
+import { Food } from '../types';
 
-export const FoodCards = ({ className }: FoodCardsProps) => {
-  const { foods = [] } = useFoods();
+export type FoodCardsProps = ClassName & {
+  foods: Food[];
+};
 
+export const FoodCards = ({ className, foods }: FoodCardsProps) => {
   return (
     <div className={clsx('food-cards', className)}>
       {foods.map(food => (

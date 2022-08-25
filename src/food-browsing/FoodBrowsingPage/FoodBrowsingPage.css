@@ -1,3 +1,8 @@
 .food-browsing__category {
   margin: 40px 0;
 }
+
+.food-browsing__show-more {
+  margin: 40px auto 0;
+  display: block;
+}

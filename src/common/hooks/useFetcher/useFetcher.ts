@@ -19,6 +19,8 @@ export const useFetcher = <T = unknown>(
     const shouldUseDefaultErrorHandler = onError?.(error, key, config) ?? true;
 
     if (!shouldUseDefaultErrorHandler) return;
+
+    alert('Something went wrong!');
   };
 
   const swrReturn = useSwr<T>(

@@ -34,6 +34,8 @@ export const useHandler = <T = void>(
       const shouldUseDefaultErrorHandler = onError?.(error, argsRef.current ?? []) ?? true;
 
       if (!shouldUseDefaultErrorHandler) return;
+
+      alert('Something went wrong!');
     },
     revalidateOnFocus: false,
     revalidateOnReconnect: false,
