@@ -2,7 +2,27 @@
   margin: 40px 0;
 }
 
+.food-browsing__category--select {
+  display: none;
+}
+
+.food-browsing__category--select label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  display: block;
+}
+
 .food-browsing__show-more {
   margin: 40px auto 0;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .food-browsing__category--select {
+    display: block;
+  }
+
+  .food-browsing__category--tabs {
+    display: none;
+  }
 }

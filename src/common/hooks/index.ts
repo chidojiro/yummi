@@ -6,3 +6,4 @@ export * from './useHandler';
 export * from './useIntersection';
 export * from './useMountEffect';
 export * from './useOnEventOutside';
+export * from './useBreakpoint';

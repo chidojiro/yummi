@@ -30,6 +30,9 @@ code {
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
+  --desktop: 1024px;
+  --tablet: 768px;
+  --mobile: 480px;
 }
 
 *,

@@ -1,0 +1,10 @@
+.select {
+  height: 36px;
+  padding-left: 8px;
+  outline: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  transition: all ease-in-out .05s;
+  border-radius: var(--border-radius-md);
+  min-width: 120px;
+}

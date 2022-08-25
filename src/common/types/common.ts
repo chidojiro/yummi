@@ -15,3 +15,8 @@ export type OpenClose = {
 };
 
 export type NullOrUndefined = null | undefined;
+
+export type Option<TValue = string> = {
+  value: TValue;
+  label: React.ReactNode;
+};

@@ -20,6 +20,7 @@
 .food-information__tags {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 12px;
 }
@@ -33,4 +34,16 @@
 .food-information__new {
   color: var(--green);
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .food-card {
+    display: flex;
+    height: 150px;
+  }
+
+  .food-card__image {
+    height: 100%;
+    width: 40%;
+  }
 }
