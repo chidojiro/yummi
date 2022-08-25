@@ -14,7 +14,7 @@ export type FoodCardProps = ClassName & {
 export const FoodCard = React.memo(
   ({ className, food: { imageUrl, rating, maxCookTime, minCookTime, name, isNew, promotion } }: FoodCardProps) => {
     return (
-      <div className={clsx('food-card', className)}>
+      <div className={clsx('food-card', className)} data-testid='food-card'>
         {!!promotion && <FoodPromotion promotion={promotion} />}
         <img className='food-card__image' src={imageUrl} alt='' />
         <div className='food-information'>

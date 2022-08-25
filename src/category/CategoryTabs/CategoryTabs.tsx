@@ -15,5 +15,5 @@ export const CategoryTabs = ({ className, value, onChange }: CategoryTabsProps) 
 
   if (isValidatingCategories) return null;
 
-  return <Tabs value={value} onChange={onChange} className={className} items={TabItems} />;
+  return <Tabs value={value} onChange={onChange} className={className} items={TabItems} data-testid='category-tabs' />;
 };

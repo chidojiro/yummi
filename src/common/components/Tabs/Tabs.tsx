@@ -21,10 +21,10 @@ export type TabsProps = HeadlessTabsProps &
     items: Tab[];
   };
 
-export const Tabs = ({ value, onChange, items, className }: TabsProps) => {
+export const Tabs = ({ value, onChange, items, className, ...restProps }: TabsProps) => {
   return (
     <HeadlessTabs value={value} onChange={onChange}>
-      <div className={clsx('tabs', className)}>
+      <div className={clsx('tabs', className)} {...restProps}>
         <nav className='tabs__navigator' aria-label='Tabs'>
           {items.map((tab, idx) => (
             <HeadlessTab key={idx} content={tab.content} value={tab.value}>

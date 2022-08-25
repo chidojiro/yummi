@@ -12,7 +12,7 @@ export type FoodCardsProps = ClassName & {
 
 export const FoodCards = ({ className, foods }: FoodCardsProps) => {
   return (
-    <div className={clsx('food-cards', className)}>
+    <div className={clsx('food-cards', className)} data-testid='food-cards'>
       {foods.map(food => (
         <FoodCard key={food.id} food={food} />
       ))}
