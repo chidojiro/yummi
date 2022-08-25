@@ -1,0 +1,23 @@
+const get = <T = unknown>(key: string, defaultValue?: T) => {
+  try {
+    const storedValue: T | null = JSON.parse(localStorage.getItem(key) as any);
+
+    return storedValue ?? defaultValue;
+  } catch (e) {
+    if (defaultValue) {
+      return defaultValue;
+    }
+
+    throw e;
+  }
+};
+
+const set = <T = unknown>(key: string, data: T) => {
+  localStorage.setItem(key, JSON.stringify(data));
+};
+
+const clear = () => localStorage.clear();
+
+const remove = localStorage.removeItem;
+
+export const LocalStorageUtils = { get, set, clear, remove };
